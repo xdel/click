@@ -1371,7 +1371,7 @@ fixincludes.pl execution failed.
         fi
         LINUX_CFLAGS="`head -n 1 conftest.dat`"
         LINUX_FIXINCLUDES_PROGRAM="| sed `tail -n 1 conftest.dat`"
-        CLICKLINUX_FIXINCLUDES_PROGRAM="| sed `tail -n 1 conftest.dat | sed -e "s       $mydir  $clickbuild_includedir/click-linuxmodule        g"`"
+        CLICKLINUX_FIXINCLUDES_PROGRAM="| sed `tail -n 1 conftest.dat | sed -e "s $mydir $clickbuild_includedir/click-linuxmodule g"`"
     fi
     AC_SUBST([LINUX_FIXINCLUDES_PROGRAM])
     AC_SUBST([CLICKLINUX_FIXINCLUDES_PROGRAM])
